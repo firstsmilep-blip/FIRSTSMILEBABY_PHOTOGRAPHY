@@ -402,60 +402,20 @@
 
 <!-- ============ BOOKING ============ -->
 <section id="book" class="book">
-  <div class="wrap book-grid">
-    <div class="book-info" data-reveal>
-      <span class="eyebrow">Book a Shoot</span>
-      <h2 class="serif">Let's hold onto this chapter.</h2>
-      <p>Tell us a little about what you're looking for and your preferred date. We'll get back to you within 24 hours to confirm availability and walk you through the next steps.</p>
-      <div class="contact-line"><span class="dot"></span> firstsmilep@gmail.com</div>
-      <div class="contact-line"><span class="dot"></span> +91 93732 77707</div>
-      <div class="contact-line"><span class="dot"></span> +91 93712 39400</div>
-      <div class="contact-line"><span class="dot"></span> Nagpur, Maharashtra</div>
-    </div>
-
+  <div class="wrap" style="max-width:680px;text-align:center;">
     <div data-reveal>
-      <form id="bookingForm">
-        <div class="form-row">
-          <div class="field">
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname" required>
-          </div>
-          <div class="field">
-            <label for="fphone">Phone Number</label>
-            <input type="tel" id="fphone" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="field">
-            <label for="fservice">Service</label>
-            <select id="fservice" required>
-              <option value="" disabled selected>Choose a session</option>
-              <option>Newborn Photography</option>
-              <option>Baby Photography</option>
-              <option>Kids Photography</option>
-              <option>Maternity Photography</option>
-              <option>Family Portraits</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="fdate">Preferred Date</label>
-            <input type="date" id="fdate" required>
-          </div>
-        </div>
-        <div class="field">
-          <label for="femail">Email</label>
-          <input type="email" id="femail" required>
-        </div>
-        <div class="field">
-          <label for="fmessage">Anything we should know? (optional)</label>
-          <textarea id="fmessage" placeholder="Baby's age, location preference, ideas you have in mind..."></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Request Booking</button>
-      </form>
-      <div class="form-success" id="formSuccess">
-        <div class="check">&#10003;</div>
-        <h3 class="serif">Request received</h3>
-        <p>Thank you! We'll reach out within 24 hours to confirm your session details.</p>
+      <span class="eyebrow">Book a Shoot</span>
+      <h2 class="serif" style="margin:14px 0 20px;">Let's hold onto this chapter.</h2>
+      <p style="color:var(--gray);margin-bottom:30px;">Message us on WhatsApp with the service you're interested in and your preferred date — we'll get back to you within 24 hours to confirm availability.</p>
+
+      <a href="https://wa.me/919373277707?text=Hi!%20I'd%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;align-items:center;gap:10px;font-size:1rem;padding:18px 38px;">
+        Message us on WhatsApp
+      </a>
+
+      <div style="margin-top:40px;">
+        <div class="contact-line" style="justify-content:center;">firstsmilep@gmail.com</div>
+        <div class="contact-line" style="justify-content:center;">+91 93732 77707 &nbsp;/&nbsp; +91 93712 39400</div>
+        <div class="contact-line" style="justify-content:center;">Nagpur, Maharashtra</div>
       </div>
     </div>
   </div>
@@ -516,15 +476,7 @@
     observer.observe(el);
   });
 
-  // Booking form submit (front-end only demo)
-  const form = document.getElementById('bookingForm');
-  const success = document.getElementById('formSuccess');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    form.style.display = 'none';
-    success.classList.add('show');
-  });
-</script>
+script>>
 
 </body>
 </html>
